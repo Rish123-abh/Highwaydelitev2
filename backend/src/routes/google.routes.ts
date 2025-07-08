@@ -24,8 +24,9 @@ router.get(
     // Pass token AND user via query param (encoded)
     const userEncoded = encodeURIComponent(JSON.stringify(user));
     res.redirect(
-      `https://subtle-lebkuchen-9a6199.netlify.app/auth-success?token=${token}&user=${userEncoded}`
-    );
+  `${process.env.FRONTEND_URL}/auth-success?token=${token}&user=${userEncoded}`
+);
+
   }
 );
 

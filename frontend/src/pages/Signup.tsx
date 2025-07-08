@@ -169,7 +169,7 @@ const Signup: React.FC = () => {
             className="google-btn"
             onClick={() =>
             (window.location.href =
-              'https://highwaydelitev2.onrender.com/api/auth/google')
+              `${import.meta.env.VITE_API_BASE_URL}/auth/google`)
             }
           >
             <img
