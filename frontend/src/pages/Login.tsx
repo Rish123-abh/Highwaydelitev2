@@ -21,7 +21,7 @@ const Login: React.FC = () => {
         pending: 'Sending OTP...',
         success: 'OTP sent to your email!',
         error: {
-          render({ data }) {
+          render({ data }: { data: any }) {
             return data?.response?.data?.message || 'Failed to send OTP';
           },
         },
@@ -46,7 +46,7 @@ const Login: React.FC = () => {
         pending: 'Verifying OTP...',
         success: 'Login successful!',
         error: {
-          render({ data }) {
+           render({ data }: { data: any }) {
             return data?.response?.data?.message || 'Login failed';
           },
         },
