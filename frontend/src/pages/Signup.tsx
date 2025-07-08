@@ -95,7 +95,7 @@ const Signup: React.FC = () => {
       <div className="signup-box">
         <div className="form-container">
           <img src={logo} alt="Logo" />
-          <h2>Sign up</h2>
+          <h2 className='form-title'>Sign up</h2>
           <p>Sign up to enjoy the feature of HD</p>
 
           <form onSubmit={handleSubmit}>
