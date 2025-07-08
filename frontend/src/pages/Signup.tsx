@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import axios from 'axios';
+import axios,{AxiosError} from 'axios';
 import '../Signup.css';
 import bg from '../assets/right-column.png';
 import logo from '../assets/top.png';
@@ -39,11 +39,11 @@ const Signup: React.FC = () => {
         {
           pending: 'Sending OTP...',
           success: 'OTP sent to your email!',
-          error: {
-            render({ data }) {
-              return data?.response?.data?.message || 'Failed to send OTP';
-            },
+         error: {
+          render({ data }: { data: AxiosError<{ message: string }> }) {
+            return data?.response?.data?.message || 'Failed to send OTP';
           },
+        },
         }
       );
       setOtpSent(true);
@@ -65,9 +65,9 @@ const Signup: React.FC = () => {
           pending: 'Verifying OTP...',
           success: 'Signup successful!',
           error: {
-            render({ data }) {
-              return data?.response?.data?.message || 'Signup failed';
-            },
+            render({ data }: { data: AxiosError<{ message: string }> }) {
+            return data?.response?.data?.message || 'Signup failed';
+          },
           },
         }
       );
