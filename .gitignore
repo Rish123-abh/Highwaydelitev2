@@ -3,7 +3,7 @@ node_modules/
 /backend/.env
 
 # Ignore .env in frontend (if any)
-/frontend/.env
+/frontend/.env.local
 
 dist/
 build/
