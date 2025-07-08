@@ -87,6 +87,8 @@ GOOGLE_CLIENT_SECRET=your_google_client_secret
 
 FRONTEND_URL=http://localhost:5173
 
+BACKEND_URL=http://localhost:5000/api
+
 4. Run the server 
 
 npm run dev
