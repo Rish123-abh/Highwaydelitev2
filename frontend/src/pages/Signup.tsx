@@ -31,7 +31,7 @@ const Signup: React.FC = () => {
   const requestOtp = async () => {
     try {
       await toast.promise(
-        axios.post('/api/auth/signup', {
+        axios.post('/auth/signup', {
           name: form.name,
           email: form.email,
           dateOfBirth: form.dateOfBirth,
@@ -55,7 +55,7 @@ const Signup: React.FC = () => {
   const verifyOtpAndSignup = async () => {
     try {
       const response = await toast.promise(
-        axios.post('/api/auth/verify-otp-signup', {
+        axios.post('/auth/verify-otp-signup', {
           email: form.email,
           code: form.otp,
           name: form.name,
