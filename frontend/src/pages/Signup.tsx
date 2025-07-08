@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import axios,{AxiosError} from 'axios';
+import {AxiosError} from 'axios';
+import axios from '../api/axios';
 import '../Signup.css';
 import bg from '../assets/right-column.png';
 import logo from '../assets/top.png';
@@ -168,7 +169,7 @@ const Signup: React.FC = () => {
             className="google-btn"
             onClick={() =>
             (window.location.href =
-              'http://localhost:5000/api/auth/google')
+              'https://subtle-lebkuchen-9a6199.netlify.app/api/auth/google')
             }
           >
             <img

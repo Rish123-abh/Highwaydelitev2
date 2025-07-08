@@ -139,7 +139,7 @@ const Login: React.FC = () => {
           <button
             className="google-btn"
             onClick={() =>
-              (window.location.href = 'http://localhost:5000/api/auth/google')
+              (window.location.href = 'https://subtle-lebkuchen-9a6199.netlify.app/api/auth/google')
             }
           >
             <img
