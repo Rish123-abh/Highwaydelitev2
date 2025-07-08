@@ -1,0 +1,247 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden; /* ✅ Prevent horizontal scroll */
+  background-color: #f3f4f6;
+}
+
+/* Wrapper that scrolls */
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Main layout area */
+.signup-box {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: row;
+  width: 100%;
+  min-height: 100vh;
+  background-color: white;
+}
+
+/* Left: Form */
+.form-container {
+  flex: 1;
+  max-width: 600px;
+  padding: 50px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #fff;
+}
+
+/* Right: Image */
+.signup-image {
+  display: none; /* Hidden by default */
+}
+
+.signup-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* On tablets/desktops */
+@media (min-width: 768px) {
+  .form-container {
+    flex: 0 0 40%;
+  }
+
+  .signup-image {
+    display: block;
+    flex: 0 0 60%;
+  }
+}
+
+
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #2d72d9;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 20px;
+  color: gray;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+input {
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+  border: 1px solid #ccc;
+}
+
+button {
+  background-color: #2d72d9;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1a5cb3;
+}
+
+.signin-text {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.signin-text a {
+  color: #2d72d9;
+  text-decoration: none;
+}
+
+.message {
+  margin-top: 15px;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.bg-image {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .bg-image {
+    display: none;
+  }
+}
+
+.or-divider {
+  text-align: center;
+  margin: 16px 0;
+  font-weight: bold;
+  color: #888;
+}
+
+.google-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px;
+  width: 100%;
+  background-color: white;
+  color: #444;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+
+.google-btn:hover {
+  background-color: #f1f1f1;
+}
+
+/* Floating Input */
+.floating-input {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.floating-input input {
+  width: 100%;
+  padding: 16px 12px 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: white;
+  outline: none;
+}
+
+.floating-input label {
+  position: absolute;
+  left: 12px;
+  top: 16px;
+  background: white;
+  padding: 0 4px;
+  font-size: 14px;
+  color: #aaa;
+  transition: all 0.2s ease;
+  pointer-events: none;
+}
+
+.floating-input input:focus + label,
+.floating-input input:not(:placeholder-shown) + label {
+  top: -8px;
+  left: 10px;
+  font-size: 12px;
+  color: #2563eb;
+}
+
+/* OTP Field with eye icon */
+.otp-input-wrapper {
+  position: relative;
+}
+
+.otp-input-wrapper input {
+  width: 100%;
+  padding-right: 40px;
+}
+
+.otp-toggle-icon {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 18px;
+  color: #666;
+  z-index: 2;
+}
+
+/* Resend Link with underline */
+.resend-link {
+  font-size: 13px;
+  color: #2563eb;
+  cursor: pointer;
+  margin-top: 4px;
+  text-decoration: underline;
+}
+
+/* Optional scrollbar styling */
+.form-container::-webkit-scrollbar {
+  width: 6px;
+}
+.form-container::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 4px;
+}

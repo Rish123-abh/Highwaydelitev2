@@ -1,0 +1,79 @@
+.floating-input {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.floating-input .datepicker-wrapper {
+  width: 100%;
+}
+
+.floating-input .datepicker-field {
+  width: 100%;
+  padding: 16px 12px 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding-left: 60px;
+  background-color: white;
+  outline: none;
+}
+
+.floating-input .datepicker-field:disabled {
+  background-color: #f8f8f8;
+  color: #999;
+}
+
+.floating-input .datelabel{
+  position: absolute;
+  left: 40px;
+  top: 16px;
+  background: white;
+  padding: 0 4px;
+  font-size: 14px;
+  color: #aaa;
+  transition: all 0.2s ease;
+  pointer-events: none;
+}
+
+.floating-input .datepicker-field:focus + label,
+.floating-input label.filled {
+  top: -8px;
+  left: 10px;
+  font-size: 12px;
+  color: #2563eb;
+}
+
+/* Wrapper for icon and input */
+.datepicker-icon-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.datepicker-field {
+  width: 100%;
+  padding: 16px 36px 8px 12px; /* extra right padding for icon */
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: white;
+  outline: none;
+}
+
+.datepicker-field:disabled {
+  background-color: #f8f8f8;
+  color: #999;
+}
+
+/* Calendar icon */
+.calendar-icon {
+  position: absolute;
+  right:90%;
+  top: 10px;
+  font-size: 10px;
+  cursor: pointer;
+  color: #888;
+}
+.floating-input label .dateunfilled{
+    padding: 100px;
+}
