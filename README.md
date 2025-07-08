@@ -35,6 +35,7 @@ Ensure the following are installed on your machine:
 ## 🖥️ Frontend Setup
 
 1. **Navigate to the frontend folder**
+
   bash
   cd frontend
 
