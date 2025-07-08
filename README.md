@@ -74,11 +74,17 @@ The frontend will be running at http://localhost:5173
   yarn
   
 3.Set up environment variables
+
 PORT=5000
+
 MONGO_URI=your_mongodb_connection_string
+
 JWT_SECRET=your_jwt_secret_key
+
 GOOGLE_CLIENT_ID=your_google_client_id
+
 GOOGLE_CLIENT_SECRET=your_google_client_secret
+
 FRONTEND_URL=http://localhost:5173
 
 4. Run the server 
@@ -109,17 +115,15 @@ Set:
 
 Authorized JavaScript origins:
 
-arduino
-Copy
-Edit
 http://localhost:5173
+
 https://your-frontend.netlify.app
+
+
 Authorized redirect URIs:
 
-bash
-Copy
-Edit
 http://localhost:5000/api/auth/google/callback
+
 https://your-backend.render.com/api/auth/google/callback
 
 
