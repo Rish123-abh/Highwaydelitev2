@@ -14,6 +14,10 @@ const Login: React.FC = () => {
   const navigate = useNavigate();
 
   const requestOtp = async () => {
+     if (!email || !/^\S+@\S+\.\S+$/.test(email)) {
+    toast.error('Please enter a valid email address.');
+    return;
+  }
   try {
     await toast.promise(
       axios.post('/auth/request-otp', { email }),
