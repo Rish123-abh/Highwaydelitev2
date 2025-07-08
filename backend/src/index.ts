@@ -12,7 +12,7 @@ dotenv.config();
 const app = express();
 app.use(
   cors({
-    origin: ['http://localhost:5173', 'https://your-frontend-deployment-url.com'],
+    origin: ['http://localhost:5173', 'https://subtle-lebkuchen-9a6199.netlify.app'],
     credentials: true, // if you're using cookies or auth headers
   })
 );
