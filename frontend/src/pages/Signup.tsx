@@ -169,7 +169,7 @@ const Signup: React.FC = () => {
             className="google-btn"
             onClick={() =>
             (window.location.href =
-              'https://subtle-lebkuchen-9a6199.netlify.app/api/auth/google')
+              'https://highwaydelitev2.onrender.com/api/auth/google')
             }
           >
             <img
