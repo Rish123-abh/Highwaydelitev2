@@ -33,6 +33,7 @@ html, body {
 /* Left: Form */
 .form-container {
   flex: 1;
+  width: 100vw;
   max-width: 600px;
   padding: 50px 30px;
   display: flex;
