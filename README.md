@@ -50,6 +50,7 @@ Ensure the following are installed on your machine:
 Create a .env file in the frontend/ directory:
 
 VITE_BACKEND_URL=http://localhost:5000
+
 VITE_GOOGLE_CLIENT_ID=your_google_client_id_here
 
 4.Run the development server
@@ -60,8 +61,11 @@ VITE_GOOGLE_CLIENT_ID=your_google_client_id_here
 The frontend will be running at http://localhost:5173
 
 
+
+
 🛠️ Backend Setup
 1.Navigate to the backend folder
+
   cd backend
 
 2. Install Dependencies
