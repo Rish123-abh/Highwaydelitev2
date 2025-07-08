@@ -1,4 +1,9 @@
 node_modules/
-.env
+# Ignore .env in backend
+/backend/.env
+
+# Ignore .env in frontend (if any)
+/frontend/.env
+
 dist/
 build/
