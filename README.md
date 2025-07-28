@@ -63,7 +63,7 @@ The frontend will be running at http://localhost:5173
 
 
 
-🛠️ Backend Setup
+## 🛠️ Backend Setup
 1.Navigate to the backend folder
 
   cd backend
