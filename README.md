@@ -42,7 +42,7 @@ Ensure the following are installed on your machine:
 
 2.Install dependencies
   npm install
-  # or
+  or
   yarn
 
 3.Set up environment variables
@@ -55,7 +55,7 @@ VITE_GOOGLE_CLIENT_ID=your_google_client_id_here
 
 4.Run the development server
   npm run dev
-  # or
+  or
   yarn dev
 
 The frontend will be running at http://localhost:5173
@@ -70,7 +70,7 @@ The frontend will be running at http://localhost:5173
 
 2. Install Dependencies
   npm install
-  # or
+  or
   yarn
   
 3.Set up environment variables
@@ -92,7 +92,7 @@ BACKEND_URL=http://localhost:5000/api
 4. Run the server 
 
 npm run dev
-# or
+ or
 yarn dev
 
 
